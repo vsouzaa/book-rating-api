@@ -20,15 +20,15 @@ A Restful application using CRUD operations to manage books, ratings and users.
 
 #### 2. Configure PostgreSQL
 
-Create database named "bookratings"
-Change spring datasource username and password in the following path
+Create database named "bookratings".\
+Change spring datasource username and password in the following path:
 > src/main/resources/application.properties
 
 #### 3. Run the application
 
 > mvn clean spring boot:run
 
-The application will run on port 8090
+The application will run on port 8090.
 
 ## Explore Rest APIs
 
@@ -63,8 +63,8 @@ POST      | /update-password
 
 ### Rating - Methods
 
-* A user can't rate twice the same book
-* Only logged users can rate
+* A user can't rate twice the same book.
+* Only logged users can rate.
 
 Method    | URL
 --------- | ------
