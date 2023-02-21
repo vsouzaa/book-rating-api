@@ -63,7 +63,7 @@ POST      | /update-password
 
 ### Rating - Methods
 
-* A user can't rate twice the same book\
+* A user can't rate twice the same book
 * Only logged users can rate
 
 Method    | URL
@@ -129,8 +129,8 @@ GET       | /books/top
 
 ### Books - Methods
 
-* By default ten books are add to the database when the application starts.\
-* Only admin authorities can add, update or delete books.\
+* By default ten books are add to the database when the application starts.
+* Only admin authorities can add, update or delete books.
 * Delete operations doesn't need JSON body, only url.
 
 Method    | URL
