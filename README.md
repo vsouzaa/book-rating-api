@@ -14,21 +14,29 @@ A Restful application using CRUD operations to manage books, ratings and users.
 
 ## Setup
 
-1. Clone the application
+#### 1. Clone the repository
 
 > git clone https://github.com/vitoorsm/springboot-rest-api.git
 
-2. Create PostgreSQL database
+#### 2. Configure PostgreSQL
 
-> create database bookrating
+Create database named "bookratings"
+Change spring datasource username and password in the following path
+> src/main/resources/application.properties
+
+#### 3. Run the application
+
+> mvn clean spring boot:run
+
+The application will run on port 8090
 
 ## Explore Rest APIs
 
 The app defines following CRUD APIs.
 
-*Since Spring Security is using httpBasic there's no need to a login page.*
+* Since Spring Security is using httpBasic there's no need to a login page.
 
-### Users -
+### User Methods
 
 Method    | URL
 --------- | ------
@@ -53,10 +61,10 @@ POST      | /update-password
 }
 ```
 
-### Ratings -
+### Rating - Methods
 
-*A user can't rate twice the same book*\
-*Only logged users can rate*
+* A user can't rate twice the same book\
+* Only logged users can rate
 
 Method    | URL
 --------- | ------
@@ -119,11 +127,11 @@ GET       | /books/top
 ]
 ```
 
-### Books - 
+### Books - Methods
 
-*By default ten books are add to the database when the application starts.*\
-*Only admin authorities can add, update or delete books.*\
-*Delete operations doesn't need JSON body, only url.*
+* By default ten books are add to the database when the application starts.\
+* Only admin authorities can add, update or delete books.\
+* Delete operations doesn't need JSON body, only url.
 
 Method    | URL
 --------- | ------
