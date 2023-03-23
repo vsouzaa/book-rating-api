@@ -4,6 +4,7 @@ A Restful application using CRUD operations to manage books, ratings and users.
 
 ## Technology stack
 * Spring Boot
+* Spring MVC
 * Spring Security (Basic Authentication)
 * Spring Data JPA
 * Hibernate
