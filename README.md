@@ -7,7 +7,6 @@ A Restful application using CRUD operations to manage books, ratings and users.
 * Spring MVC
 * Spring Security (Basic Authentication)
 * Spring Data JPA
-* Hibernate
 * PostgreSQL
 * Maven
 * JUnit
