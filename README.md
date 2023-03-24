@@ -30,9 +30,7 @@ Change spring datasource username and password in the following path:
 
 The application will run on port 8090.
 
-## Explore Rest APIs
-
-The app defines following CRUD APIs.
+## Explore Rest API
 
 * Since Spring Security is using httpBasic there's no need to a login page.
 
