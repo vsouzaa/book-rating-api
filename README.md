@@ -7,7 +7,7 @@ A Restful application using CRUD operations to manage books, ratings and users.
 * Spring MVC
 * Spring Security (Basic Authentication)
 * Spring Data JPA
-* PostgreSQL
+* MySQL
 * Maven
 * JUnit
 * Mockito
@@ -16,9 +16,9 @@ A Restful application using CRUD operations to manage books, ratings and users.
 
 #### 1. Clone the repository
 
-> git clone https://github.com/vitoorsm/springboot-rest-api.git
+> git clone https://github.com/vitoorsm/book-rating-api
 
-#### 2. Configure PostgreSQL
+#### 2. Configure MySQL
 
 Create database named "bookratings".\
 Change spring datasource username and password in the following path:
