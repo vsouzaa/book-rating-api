@@ -18,7 +18,7 @@ public class RateController {
     private RateService rateService;
     private BookService bookService;
 
-    @GetMapping(path = "/top")
+    @GetMapping(path = "/books/top")
     public List<Book> topRatings(){
         List<Book> bookList = bookService.findAllByOrderByRatingsavg();
         Collections.reverse(bookList);
@@ -26,7 +26,7 @@ public class RateController {
     }
 
     @PreAuthorize("hasAnyAuthority('USER','ADMIN')")
-    @PostMapping(path = "/rate")
+    @PostMapping(path = "/books/rate")
     public Rate save(@RequestBody @Valid RateDto rateDto){
         return rateService.save(rateDto);
     }
